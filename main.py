@@ -17,7 +17,7 @@ def main(dataloaders, params, epochs, warmup_steps,
                         max_seq_len=max_seq_len, pad_idx=pad_idx).to(device)
 
     if load_model:
-        model.load_state_dict(torch.load("transformer/saved/transformer.pt"))
+        model.load_state_dict(torch.load("saved/transformer.pt"))
 
     loss = nn.CrossEntropyLoss(ignore_index=pad_idx)
     optim = torch.optim.Adam(model.parameters(), betas=(0.9, 0.98), eps=10e-9)
