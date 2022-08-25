@@ -1,0 +1,11 @@
+# Parameters as seen in the paper:
+# https://arxiv.org/abs/1706.03762
+
+enc_layers: 6
+dec_layers: 6
+num_heads: 8
+d_model: 512
+d_v: 64
+d_k: 64
+d_ff: 2048
+dropout: 0.1
