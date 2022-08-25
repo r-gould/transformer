@@ -40,7 +40,7 @@ class Trainer:
 
             if save_model:
                 print("Saving model...")
-                torch.save(model.state_dict(), f"transformer/saved/transformer_{epoch}.pt")
+                torch.save(model.state_dict(), f"saved/transformer_{epoch}.pt")
                 print("Model saved")
 
             avg_loss = np.mean(epoch_losses[-50:])
